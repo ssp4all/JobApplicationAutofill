@@ -1,0 +1,10 @@
+language: node_js
+# command to install dependencies
+node_js:
+  - 14
+install:
+  - cd Code && npm install && cd ..
+# command to run tests
+script:
+  - cd Code && npm run test
+

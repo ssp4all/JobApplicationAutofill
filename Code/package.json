@@ -1,0 +1,28 @@
+{
+  "name": "autofillbuddy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "contentScript.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:badges": "npm run test -- --coverage  && jest-coverage-badges"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.4.2"
+  },
+  "dependencies": {
+    "jest-coverage-badges": "^1.1.2"
+  },
+  "jest": {
+    "coverageReporters": [
+      "json-summary",
+      "text",
+      "lcov"
+    ]
+  }
+}

@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+	<title>Autofill Buddy</title>
+	<script src="contentScript.js"></script>
+	<link rel="stylesheet" href="main-style.css" />
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+	<div class="container">
+		<header id="main-header">
+			<div class="jumbotron heading">Autofill Buddy</div>
+		</header>
+		<!-- <br><br><br> -->
+		<div class="content">
+			<div class="jumbotron">
+				<span><b>Profiles</b></span>
+				<div class="profiles" id="profileDiv">
+					<!-- <button class="profile-item" id = "SE" value="Software Engineering">Software Engineering</button>
+					<button class="profile-item" id = "abc" value="Data Science">Data Science</button> -->
+				</div>
+				<br />
+				<button type="button" style="width:100%;margin:0;" class="btn btn-info" id="newProfile">Create a new
+					profile +</button>
+			</div>
+			<div class="jumbotron">
+				<span><b>Tags</b></span>
+				<br />
+				<div id="variables">
+					<table style="width: 100%" id="variableTable">
+						<thead>
+							<tr>
+								<th width="25%">Tag Name</th>
+								<th width="75%">Tag Value</th>
+							</tr>
+						</thead>
+					</table>
+				</div>
+				<br />
+				<div id="data">
+					<input type="text" placeholder="Tag name e.g., workex1" id="tag_name" autofocus required>
+					<textarea rows=3 placeholder="Tag content here..." id="workex_desc" required></textarea>
+					<button type="button" style="width:100%;margin:0;" class="btn btn-info" id="submit_data">Submit
+						Data</button>
+
+					<!-- <table id="data">
+						<thead>
+							<tr>
+								<th width="25%">Tag Name</th>
+								<th width="75%">Work Experience</th>
+							</tr>
+						</thead>
+						<tr>
+							<td>
+								<input type="text" placeholder="tag name, e.g: workex1" id="tag_name">
+							</td>
+							
+							<td>
+								<textarea rows=3 placeholder="your workex here" id="workex_desc">
+								</textarea>
+							</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<button type="button" style="width:100%;margin:0;" class="btn btn-info" id="submit_data">Submit Data</button>
+							</td>
+						</tr>
+					</table> -->
+				</div>
+			</div>
+		</div>
+		<br>
+		<footer>
+			<div class="jumbotron" id="main-footer">
+				<div class="container text-center">
+					<small>Copyright &copy; Autofill Buddy 2020</small>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+
+	<!--Bootstrap 4 CDN-->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
